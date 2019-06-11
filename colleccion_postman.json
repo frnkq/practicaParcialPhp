@@ -1,0 +1,144 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ppp",
+		"_postman_id": "082be416-35ad-7555-2f97-0c83b82811cd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "A_Registrar",
+			"request": {
+				"url": "localhost/usuario",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\":\"oct\",\n\t\"clave\":\"octavio\",\n\t\"sexo\":\"femenino\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "B_Login",
+			"request": {
+				"url": "localhost/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\":\"oct\",\n\t\"clave\":\"octavio\",\n\t\"sexo\":\"femenino\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "C_Usuario",
+			"request": {
+				"url": "localhost/usuario",
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eX2AiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjAyMDg2ODAsImV4cCI6MTU2MDI2ODY4MCwiYXVkIjoiYjVlNWRhYzVjNDQ4YTE2ZmU0MTIyNTMxYzQzMzA5MTcwMjEzN2U5MSIsImRhdGEiOnsibm9tYnJlIjoiY2FybG9zIiwic2V4byI6ImZlbWVuaW5vIiwicm9sIjoiYWRtaW4ifSwiYXBwIjoiRnJhbmNvIENhbmV2YWxpIn0.dY22CPz37FS2WUEMCEfoFZOVcJ0dNm-73V_8PfEJbFY",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "D_COMPRA",
+			"request": {
+				"url": "localhost/compra",
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjAyMDc1MzEsImV4cCI6MTU2MDI2NzUzMSwiYXVkIjoiYjVlNWRhYzVjNDQ4YTE2ZmU0MTIyNTMxYzQzMzA5MTcwMjEzN2U5MSIsImRhdGEiOnsibm9tYnJlIjoiY2FybG9zIiwic2V4byI6ImZlbWVuaW5vIiwicm9sIjoiYWRtaW4ifSwiYXBwIjoiRnJhbmNvIENhbmV2YWxpIn0.YPgiEsJsMOmPK6FwsAfRUE20RhfdPaCXytRtV3DnFhA",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"articulo\": \"3\",\n\t\"fecha\":\"20/06/19\",\n\t\"precio\":\"800\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "COMPRA_IMAGEN",
+			"request": {
+				"url": "localhost/compra",
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjAyMTM4MTUsImV4cCI6MTU2MDI3MzgxNSwiYXVkIjoiYjVlNWRhYzVjNDQ4YTE2ZmU0MTIyNTMxYzQzMzA5MTcwMjEzN2U5MSIsImRhdGEiOnsibm9tYnJlIjoib2N0Iiwic2V4byI6ImZlbWVuaW5vIiwicm9sIjoidXN1YXJpbyJ9LCJhcHAiOiJGcmFuY28gQ2FuZXZhbGkifQ.48px8ZGt3G6akkONYGp2y5l4vDDqcE4bPZWutMa4Vkw",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"value": "",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "articulo",
+							"value": "6",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "05/06/19",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "600",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
